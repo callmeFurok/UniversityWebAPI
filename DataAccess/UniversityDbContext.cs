@@ -1,15 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using UniversityWebAPI.Models.DataModels;
 
 namespace UniversityWebAPI.DataAccess
 {
-    public class UniversityDbContext :DbContext
+    public class UniversityDbContext : DbContext
     {
-        public UniversityDbContext(DbContextOptions<UniversityDbContext> options): base(options)
+        public UniversityDbContext(DbContextOptions<UniversityDbContext> options) : base(options)
         {
 
         }
 
-        // TODO: Add DbSets (Tables of our Data base)
+        // 1. Add DbSets (Tables of our Data base)
+        public DbSet<User> Users { get; set; }
+
 
     }
 }

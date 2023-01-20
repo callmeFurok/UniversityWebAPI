@@ -13,9 +13,5 @@ namespace UniversityWebAPI.Models.DataModels
         [Required]
         public string Password { get; set; }
 
-        // En este punto continuar
-
-
-
     }
 }
